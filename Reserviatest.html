@@ -3,20 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3e6a841702.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
     <title>Reservia</title>
 </head>
 
+<!--Voir s'il vaut mieux utiliser des class ou des id-->
+<!-- Pour barre de recherche : Form ou Input?-->
+
 <body>
     <!-- HEADER -->
     <header class="header">
-
+        <img class="headerImg" src="img/logo/ReserviaLogo.svg" alt="Reservia">
+        <nav class="HeaderNav">
+            <a class="LienHeader" href="#hebergements" >Hébergements</a> <!-- Voir si les ancres doivent être en FR ou EN-->
+            <a class="LienHeader" href="#activites" >Activités</a>
+            <a class="signup" href="#" >S'inscrire</a>
+         </nav>
     </header>
     <!-- /HEADER -->
 
     <!-- MAIN -->
     <main class="main">
         <!-- TOPBAR -->
+        <section class="recherche">
+            <header class="topbarheader">
+                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                <p>En plein centre ville ou en pleine nature</p>
+            </header>
+            <input type="search" id="barrederecherche">
+
+
+
+        </section>
 
 
 
