@@ -16,8 +16,8 @@
     <header class="header">
         <img class="headerImg" src="img/logo/ReserviaLogo.svg" alt="Reservia">
         <nav class="HeaderNav">
-            <a class="LienHeader" href="#hebergements" >Hébergements</a> <!-- Voir si les ancres doivent être en FR ou EN-->
-            <a class="LienHeader" href="#activites" >Activités</a>
+            <a class="headerlink" href="#hebergements" >Hébergements</a> <!-- Voir si les ancres doivent être en FR ou EN-->
+            <a class="headerlink" href="#activites" >Activités</a>
             <a class="signup" href="#" >S'inscrire</a>
          </nav>
     </header>
@@ -26,37 +26,38 @@
     <!-- MAIN -->
     <main class="main">
         <!-- TOPBAR -->
-        <section class="recherche">
+        <section class="search">
             <header class="topbarheader">
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre ville ou en pleine nature</p>
             </header> 
 
             <!-- Formulaire de Recherche -->  
-            <form class="formrecherche" action="Rechercher" method="get">
+            <form class="searchform" action="search" method="get">
                 <i class="fas fa-map-marker-alt"></i> <!--Map Icon-->
-                <input class="searchbar" type="search"  placeholder="Marseille,France" name="Recherche">
-                        <button id="boutton_de_recherche" disabled="disabled"> <!-- Désactiver le bouton-->
-                            <span class="textebouttonderecherche">Rechercher</span> 
+                <input class="searchbar" type="search"  placeholder="Marseille,France" name="Recherche">VOIR POUR SUMMIT
+                        <button id="searchbutton" disabled="disabled"> <!-- Désactiver le bouton-->
+                            <span class="search_button_text">Rechercher</span> 
                         </button>
 			</form> 
-			<div class="blocfiltres">
-				<div class="filtres">
+			<div class="filters_block">
+				<div class="filters">
 				<h2>Filtres</h2> <!-- filtres de recherche: Boutons? -->
 
-					<button class="éco"><i class="fas fa-money-bill-wave"></i>Économique</button>
-					<button class="famille"><i class="fas fa-child"></i>Familial</button>
-					<button class="romantique"><i class="fas fa-heart"></i>Romantique</button>
+					<button class="eco"><i class="fas fa-money-bill-wave"></i>Économique</button>
+					<button class="familly"><i class="fas fa-child"></i>Familial</button>
+					<button class="romantic"><i class="fas fa-heart"></i>Romantique</button>
 					<button class="pets"><i class="fas fa-dog"></i>Animaux autorisés</button>
 
 				</div>	
-				<p class="resultatrecherche"><i class="fas fa-info-circle"></i>Plus de 500 logements sont disponibles dans cette ville</p>
+				<p class="searchresult"><i class="fas fa-info-circle"></i>Plus de 500 logements sont disponibles dans cette ville</p>
 			</div>
 		</section>
 
 		<!-- /TOPBAR -->
-		<!--Hébergements-->
-		<section class="hébergements">
+        <!--Hébergements-->
+        
+		<section class="hostings">
 
 
 

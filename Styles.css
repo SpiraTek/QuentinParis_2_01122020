@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap');
+
+/* Couleurs : Bleu #0065FC Bleu Clair #DEEBFF Gris fond: #F2F2F2*/
+
+a {
+    color: inherit;
+    text-decoration: none;
+
+    .header {
+        display: grid;
+        align-items: center;
+        max-width: 1440px;
+        margin: auto;
+      }
+
+    }
+    .headerImg {
+      grid-area: logo;
+      padding: 0 2rem;
+      height: 2.813rem;
+    
