@@ -2,20 +2,93 @@
 
 /* Couleurs : Bleu #0065FC Bleu Clair #DEEBFF Gris fond: #F2F2F2*/
 
-a {
-    color: inherit;
-    text-decoration: none;
+*
+{
+  font-family:"Raleway", sans-serif;
+  
+}
 
-    .header {
-        display: grid;
-        align-items: center;
-        max-width: 1440px;
-        margin: auto;
-      }
 
-    }
-    .headerImg {
-      grid-area: logo;
-      padding: 0 2rem;
-      height: 2.813rem;
-    
+body
+{
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+a
+{
+  color: initial;
+  text-decoration: none; 
+}
+
+header
+{
+  height: 7em;
+  border: 5px solid pink;
+}
+
+
+  .headerbar
+  {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+  
+
+}
+
+nav
+{
+margin: 3em;
+}
+
+
+
+.headerlink:active, .signup:active
+{
+ color:#0065FC; 
+}
+
+.signup
+{
+  color:#0065FC;
+}
+
+.headerlink:hover
+{
+  color:#0065FC;
+}
+
+
+
+#title
+{
+  display:flex;
+  flex-direction: column;
+  line-height: 0.1em;
+
+  
+}
+
+#searchform
+{
+  display: inline-flex;
+  margin-top: 2em;
+  display: flex;
+
+}
+
+.fa-map-marker-alt
+{
+  background-color: #F2F2F2;
+  padding: 1rem 1.25rem;
+  border-radius: 1rem 0 0 1rem;
+  text-align: center; 
+  margin-left: 0.2em;
+}
+
+

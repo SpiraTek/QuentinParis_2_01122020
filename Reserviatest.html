@@ -13,30 +13,34 @@
 
 <body>
     <!-- HEADER -->
-    <header class="header">
-        <img class="headerImg" src="img/logo/ReserviaLogo.svg" alt="Reservia">
-        <nav class="HeaderNav">
-            <a class="headerlink" href="#hebergements" >Hébergements</a> <!-- Voir si les ancres doivent être en FR ou EN-->
-            <a class="headerlink" href="#activites" >Activités</a>
-            <a class="signup" href="#" >S'inscrire</a>
-         </nav>
+    <header>
+        <div class="headerbar">
+
+            <img class="headerlogo" src="img/logo/ReserviaLogo.svg" alt="Reservia">
+            <nav class="navbar">
+                <a class="headerlink" href="#lodging" >Hébergements</a> 
+                <a class="headerlink" href="#activities" >Activités</a>
+                <a class="signup" href="#" >S'inscrire</a>
+            </nav>
+          
+        </div>    
     </header>
     <!-- /HEADER -->
 
     <!-- MAIN -->
     <main class="main">
         <!-- TOPBAR -->
-        <section class="search">
-            <header class="topbarheader">
-                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                <p>En plein centre ville ou en pleine nature</p>
-            </header> 
+        <div id="title">
+             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+             <p class="subtitle">En plein centre ville ou en pleine nature</p> 
+        </div>   
 
-            <!-- Formulaire de Recherche -->  
-            <form class="searchform" action="search" method="get">
+        <section class="searchsection">
+        <!-- Formulaire de Recherche -->  
+            <form id="searchform" action="search" method="get">
                 <i class="fas fa-map-marker-alt"></i> <!--Map Icon-->
-                <input class="searchbar" type="search"  placeholder="Marseille,France" name="Recherche">VOIR POUR SUMMIT
-                        <button id="searchbutton" disabled="disabled"> <!-- Désactiver le bouton-->
+                <input class="searchbar" type="search"  placeholder="Marseille,France" name="Recherche">
+                        <button  id="searchbutton" type="submit"><!-- Désactiver le bouton-->
                             <span class="search_button_text">Rechercher</span> 
                         </button>
 			</form> 
