@@ -11,7 +11,7 @@
 
 body
 {
-  font-size: 16px;
+  font-size: 14px;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -26,7 +26,7 @@ a
 header
 {
   height: 7em;
-  border: 5px solid pink;
+  border: 5px solid transparent;
 }
 
 
@@ -41,9 +41,12 @@ header
 
 }
 
-nav
+.navbar
 {
 margin: 3em;
+border: solid pink; /*RETIRER PAR LA SUITE */
+word-spacing: 3em;
+
 }
 
 
@@ -77,18 +80,38 @@ margin: 3em;
 #searchform
 {
   display: inline-flex;
-  margin-top: 2em;
-  display: flex;
+  margin-top: 1em;
+  border: solid red;
+  
 
 }
 
 .fa-map-marker-alt
 {
   background-color: #F2F2F2;
-  padding: 1rem 1.25rem;
-  border-radius: 1rem 0 0 1rem;
+  padding: 0.7em;
+  border-radius: 0.7em 0  0 0.7em;
   text-align: center; 
   margin-left: 0.2em;
+  
 }
 
+#searchbutton
+{
+  border-radius: 0 0.7em 0.7em 0;
+  border-color: transparent;
+  background-color: #0065FC;
+  color: white;
+}
 
+.search_button_text
+{
+  font-weight: bold;
+}
+
+.filters
+{
+  display: inline-flex;
+  margin-top: 1em;
+  font-weight: bold; 
+}
