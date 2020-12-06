@@ -44,16 +44,35 @@
                             <span class="search_button_text">Rechercher</span> 
                         </button>
 			</form> 
-			<div class="filters_block">
+			<div id="filters_block">
 				
-				<h2>Filtres</h2> <!-- filtres de recherche: Boutons? -->
+				<h2 id=FiltersTitle>Filtres</h2> <!-- filtres de recherche: Boutons? -->
+               
                 <div class="filters">
-					<button class="eco"><i class="fas fa-money-bill-wave"></i>Économique</button>
-					<button class="familly"><i class="fas fa-child"></i>Familial</button>
-					<button class="romantic"><i class="fas fa-heart"></i>Romantique</button>
-					<button class="pets"><i class="fas fa-dog"></i>Animaux autorisés</button>
-
-				</div>	
+					<div class="filtersection">
+                        <i class="fas fa-money-bill-wave fa-lg filtericon"></i>
+                    </div>
+                        <span class="filtericontitle">Économique</span>
+                </div>    
+                <div class="filters">
+                    <div class="filtersection">
+                        <i class="fas fa-child fa-lg filtericon"></i>
+                    </div>
+                        <span class="filtericontitle">Familial</span>
+                </div>
+                <div class="filters">
+                    <div class="filtersection">
+                        <i class="fas fa-heart fa-lg filtericon"></i>
+                    </div>
+                        <span class="filtericontitle">Romantique</span>
+                </div>
+				<div class="filters">
+                    <div class="filtersection">
+                        <i class="fas fa-dog fa-lg filtericon"></i>
+                    </div>
+                        <span class="filtericontitle">Animaux Autorisés</span>
+                </div>
+					
 				<p class="searchresult"><i class="fas fa-info-circle"></i>Plus de 500 logements sont disponibles dans cette ville</p>
 			</div>
 		</section>
