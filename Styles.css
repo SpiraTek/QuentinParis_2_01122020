@@ -14,7 +14,7 @@ body
   font-size: 14px;
   margin: 0 15px 0 15px;
   padding: 0;
-  margin: 0 20px 20px;
+  margin: 0 30px 30px;
 
 }
 
@@ -44,7 +44,6 @@ header
 .navbar
 {
 margin-top: 3em;
-border: solid pink; /*RETIRER PAR LA SUITE */
 word-spacing: 3em;
 
 }
@@ -121,8 +120,8 @@ word-spacing: 3em;
 
 #FiltersTitle
 {
-  display: inline-flex;
-  margin-right: 1em;
+  display: inline;
+  margin-right: 1em ;
   margin-top: 0.5em;
   
 }
@@ -203,12 +202,20 @@ word-spacing: 3em;
 #hosting
 {
   display: flex;
-  justify-content: center;
+  justify-content: start  ;
+  margin-top: 15px;
+  border: solid pink;
   
 
 }
 
-.leftcaptiontitle, .leftcaptiondescription, .popcaptiondescription, .popcaptiontitle
+.leftcaptiontitle
+
+{
+  font-size: 0.8em;
+}
+
+.leftcaptiondescription, .popcaptiondescription, .popcaptiontitle
 {
   font-size: 0.7em;
 }
@@ -227,37 +234,52 @@ word-spacing: 3em;
 {
   display: grid;
   grid-template-columns: 2fr 2fr 2fr;
-  height: 600px;
+  grid-gap:;
   background-color: #F2F2F2;  
   border-radius: 15px;
-  padding:auto;
+  padding-right: auto;
   width: 66%;
   margin-right: 30px;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  border: solid #f2F2F2
   
 
 }
 
 .leftcardfigure
 {
-  display: block;
-  margin-top: 0.2em
+  display: column;
+  margin-top: 0.2em;
 }
 
 .hostingleftcard
 {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin: 15px;
+  margin: 15px 30px 0 30px;
   width: 240px;
-  height: 200px;
+  height: 190px;
   background-color: #FFFFFF;
   border: solid white;
   border-radius: 15px;
   box-shadow: 0 0 7px #c1c1c1;
  
+
+}
+
+.lefcardfigcaption
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-left: 0.5em;
+  line-height:0.2em;  
+  
+
+  
 
 }
 
@@ -286,24 +308,22 @@ word-spacing: 3em;
 /*aside*/
 .populartitle
 {
-  display: flex;
+  grid-column: 1/-1;
   margin-left: 15px;
-  justify-content:start;
-  align-items: center;
   margin-bottom: -60px;
+  justify-content:center;
+  align-items: center;
 }
 
 .popular
 {
-  display: flex;
-  flex-direction: column;
-  background-color: #F2F2F2;  
+  display: grid;
+  direction: row;
   border-radius: 15px;
-  padding-right: 15px;
-  padding-top: 5px;
+  background-color: #F2F2F2;
   width: 30%;
-  justify-content: start;
-  align-items: center;
+  border: solid #F2F2F2
+  
  
 }
 
@@ -312,13 +332,13 @@ word-spacing: 3em;
   display: flex;
   border-radius: 15px;
   margin: 15px;
-  width: 400px;
+  width:90%;
   height: 144px;
   background-color: #FFFFFF;
   border: solid white;
   align-items: center;
   justify-content: start;
-  box-shadow: 0 0 7px #c1c1c1;
+  box-shadow: 0 0 7 #c1c1c1;
   
  }
 
@@ -326,12 +346,18 @@ word-spacing: 3em;
  {
    display: flex;
    flex-direction: column;
-   justify-content: ;
+   width: 200px;
+   height: 133px;
+   align-items: start;
+   font-size: auto; 
+   padding-left: 1em;
+   border: solid pink;
  }
 
  .popularcardfigure
  {
   display: flex;
+  flex-wrap: wrap;
   margin: auto;
   padding: auto;
   justify-content: center;
@@ -339,7 +365,12 @@ word-spacing: 3em;
   
  }
 
-
+.popularnotes
+{
+  padding-bottom: -100px;
+  
+  
+}
 
 
 
@@ -367,6 +398,26 @@ word-spacing: 3em;
 }
 
 
+/* FOOTER */
 
+footer
+{
+  margin-top: 30px;
+  width: 100%;
+  background-color: #F2F2F2;
+}
 
+.footer
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  align-items: start;
+  justify-content: center;
+}
 
+.footertitle
+{
+  padding-left: 40px;
+  font-weight: bold;
+
+}
