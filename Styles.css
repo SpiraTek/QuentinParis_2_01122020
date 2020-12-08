@@ -14,6 +14,7 @@ body
   font-size: 14px;
   margin: 0 15px 0 15px;
   padding: 0;
+  margin: 0 20px 20px;
 
 }
 
@@ -35,15 +36,14 @@ header
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 0.2em;
-  padding-right: 0.2em;
+ 
   
 
 }
 
 .navbar
 {
-margin: 3em;
+margin-top: 3em;
 border: solid pink; /*RETIRER PAR LA SUITE */
 word-spacing: 3em;
 
@@ -124,6 +124,7 @@ word-spacing: 3em;
   display: inline-flex;
   margin-right: 1em;
   margin-top: 0.5em;
+  
 }
 
 .filters
@@ -157,6 +158,13 @@ word-spacing: 3em;
 .filtericon
 {
   color: blue;
+}
+
+.filtericontitle
+{
+ display: flex;
+ align-items: auto;
+ justify-content: auto;
 }
 
 
@@ -206,6 +214,7 @@ word-spacing: 3em;
 }
 #hostingleftheader
 {
+
   grid-column: 1/-1;
   margin-left: 15px;
   margin-bottom: -60px;
@@ -217,14 +226,17 @@ word-spacing: 3em;
 #hostingleft
 {
   display: grid;
-  grid-template-columns: 2fr 2fr 2fr ;
+  grid-template-columns: 2fr 2fr 2fr;
+  height: 600px;
   background-color: #F2F2F2;  
   border-radius: 15px;
-  padding-left: 15px;
+  padding:auto;
   width: 66%;
-  margin-right: auto;
+  margin-right: 30px;
   justify-content: center;
-  align-items: auto;
+  align-items: center;
+  
+
 }
 
 .leftcardfigure
@@ -243,9 +255,8 @@ word-spacing: 3em;
   height: 200px;
   background-color: #FFFFFF;
   border: solid white;
-  
-
   border-radius: 15px;
+  box-shadow: 0 0 7px #c1c1c1;
  
 
 }
@@ -275,10 +286,11 @@ word-spacing: 3em;
 /*aside*/
 .populartitle
 {
-  
+  display: flex;
   margin-left: 15px;
-  justify-content:center;
+  justify-content:start;
   align-items: center;
+  margin-bottom: -60px;
 }
 
 .popular
@@ -288,8 +300,9 @@ word-spacing: 3em;
   background-color: #F2F2F2;  
   border-radius: 15px;
   padding-right: 15px;
+  padding-top: 5px;
   width: 30%;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
  
 }
@@ -304,6 +317,8 @@ word-spacing: 3em;
   background-color: #FFFFFF;
   border: solid white;
   align-items: center;
+  justify-content: start;
+  box-shadow: 0 0 7px #c1c1c1;
   
  }
 
@@ -334,6 +349,8 @@ word-spacing: 3em;
   height: 140px;
   border-radius: 15px 0 0 15px;
   object-fit: cover;
+  padding-left: 0.1em;
+  
   
 }
 
