@@ -430,12 +430,14 @@ word-spacing: 3em;
   
   
   
+  
 }
 
 .actwrap
 {
   display: flex;
-  flex: 1;
+  flex: auto;
+  
 }
 
 .actcardtitle
