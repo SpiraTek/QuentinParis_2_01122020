@@ -12,9 +12,8 @@
 body
 {
   font-size: 14px;
-  margin: 0 15px 0 15px;
-  padding: 0;
   margin: 0 30px 30px;
+  
 
 }
 
@@ -338,7 +337,7 @@ word-spacing: 3em;
   border: solid white;
   align-items: center;
   justify-content: start;
-  box-shadow: 0 0 7 #c1c1c1;
+  box-shadow: 0 0 7px #c1c1c1;
   
  }
 
@@ -397,15 +396,127 @@ word-spacing: 3em;
   color:#F2F2F2
 }
 
+/* Activités*/
+
+.activitytitle
+{
+  display: flex;
+
+
+  
+}
+
+#activity
+{
+  display: grid;
+  grid-template: repeat(12, 1fr) / repeat(4, 1fr);
+  gap: 40px;
+  height: 550px;
+  
+  
+
+  
+  
+  
+}
+.acards
+{
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  box-shadow: 0 0 7px #c1c1c1;
+  overflow: hidden;
+  
+  
+  
+  
+}
+
+.actwrap
+{
+  display: flex;
+  flex: 1;
+}
+
+.actcardtitle
+{
+  display: flex;
+  margin: 15px 15px;
+  position: relative;
+  background-color: #ffffff;
+}
+
+
+/* Positionnement sur la grille */
+
+.activitycard1
+{
+  grid-column: 1 / 2;
+  grid-row: 2 / 12;
+}
+
+.activitycard2
+{
+  grid-column: 2 / 3;
+  grid-row: 2 / 8;
+}
+
+.activitycard3
+{
+  grid-column: 2 / 3;
+  grid-row: 8 / 12;
+
+
+}
+
+.activitycard4
+{
+  grid-column: 3 / 4;
+  grid-row: 2 / 12 ;
+}
+
+.activitycard5
+{
+  grid-column: 4 / 4;
+  grid-row: 2 / 7;
+}
+
+.activitycard6
+{
+  grid-column: 4 / 4;
+  grid-row: 7 / 12;
+}
+
+/* IMAGES ACTIVITES */
+
+
+.actcardimg
+{
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  position: relative;
+
+}
+
+
+
+
+
 
 /* FOOTER */
 
 footer
 {
+
+  display:flex;
   margin-top: 30px;
-  width: 100%;
   background-color: #F2F2F2;
+  
+  
 }
+
+
 
 .footer
 {
@@ -413,6 +524,7 @@ footer
   grid-template-columns: 1fr 1fr 1fr ;
   align-items: start;
   justify-content: center;
+  
 }
 
 .footertitle
