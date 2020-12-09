@@ -401,6 +401,8 @@ word-spacing: 3em;
 .activitytitle
 {
   display: flex;
+  flex-direction: column;
+  margin-bottom: -15px;
 
 
   
@@ -408,6 +410,7 @@ word-spacing: 3em;
 
 #activity
 {
+  margin-top: 40px;
   display: grid;
   grid-template: repeat(12, 1fr) / repeat(4, 1fr);
   gap: 40px;
@@ -436,8 +439,8 @@ word-spacing: 3em;
 .actwrap
 {
   display: flex;
-  flex: auto;
-  
+  flex: 1;
+  min-height: 0;
 }
 
 .actcardtitle
