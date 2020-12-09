@@ -201,90 +201,59 @@ word-spacing: 3em;
 #hosting
 {
   display: flex;
-  justify-content: start  ;
-  margin-top: 15px;
-  border: solid pink;
+  justify-content: start;
+  margin-top: 20px;
   
 
 }
 
-.leftcaptiontitle
-
-{
-  font-size: 0.8em;
-}
-
-.leftcaptiondescription, .popcaptiondescription, .popcaptiontitle
-{
-  font-size: 0.7em;
-}
-#hostingleftheader
-{
-
-  grid-column: 1/-1;
-  margin-left: 15px;
-  margin-bottom: -60px;
-  justify-content:center;
-  align-items: center;
-}
-
-
-#hostingleft
+#leftgrid
 {
   display: grid;
-  grid-template-columns: 2fr 2fr 2fr;
-  grid-gap:;
+  grid-template-columns: 1fr 1fr 1fr;
   background-color: #F2F2F2;  
   border-radius: 15px;
   padding-right: auto;
   width: 66%;
   margin-right: 30px;
-  justify-content: space-around;
+  padding-left: 10px;
   align-items: center;
-  border: solid #f2F2F2
+  padding-top: 20px;
+  padding-bottom: 20px;
+  
   
 
 }
 
-.leftcardfigure
-{
-  display: column;
-  margin-top: 0.2em;
-}
-
-.hostingleftcard
+.leftcard
 {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  align-items: center;  
   justify-content: center;
   margin: 15px 30px 0 30px;
-  width: 240px;
-  height: 190px;
+  width: 245px;
+  height: 205px;
   background-color: #FFFFFF;
-  border: solid white;
+  border: 15px #ffff;
   border-radius: 15px;
   box-shadow: 0 0 7px #c1c1c1;
- 
+  
 
 }
 
-.lefcardfigcaption
+.leftcardwrap
 {
   display: flex;
+  position: relative;
   flex-direction: column;
-  justify-content: flex-end;
-  padding-left: 0.5em;
-  line-height:0.2em;  
+  align-items: start;
+  justify-content: center;
+  
+  border-radius: 10px 10px 0 0;
   
 
   
-
 }
-
-
-
-/* COMPORTEMENT IMG */
 
 .hostingleftimg
 {
@@ -293,7 +262,39 @@ word-spacing: 3em;
   border-radius: 15px 15px 0 0;
   object-fit: cover;
   
+
 }
+
+.lefcardfigcaption
+{
+  display: block;
+  flex-direction: column;
+  margin-left:15px;
+  
+}
+
+.leftcaptiontitle
+
+{
+  font-size: 1em;
+}
+
+.leftcaptiondescription, .popcaptiondescription, .popcaptiontitle
+{
+  font-size: 0.7em;
+}
+#hostingleftheader
+{
+  grid-column: 1/-1;
+  margin-left: 15px;
+  margin-bottom: -60px;
+  justify-content:center;
+  align-items: center;
+}
+
+
+
+
 
 .leftviewmore
 {
@@ -320,7 +321,6 @@ word-spacing: 3em;
   direction: row;
   border-radius: 15px;
   background-color: #F2F2F2;
-  width: 30%;
   border: solid #F2F2F2
   
  
@@ -331,7 +331,6 @@ word-spacing: 3em;
   display: flex;
   border-radius: 15px;
   margin: 15px;
-  width:90%;
   height: 144px;
   background-color: #FFFFFF;
   border: solid white;
