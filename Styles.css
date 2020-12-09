@@ -201,9 +201,70 @@ word-spacing: 3em;
 #hosting
 {
   display: flex;
-  justify-content: start  ;
+  justify-content: space-around;
+  flex-wrap: wrap;
   margin-top: 15px;
-  TEST
+
+}
+
+#leftgrid
+{
+  display: flex;
+  padding: 10px;
+  width:66%;
+  border-radius: 20px;
+  background-color: #f2f2f2;
+ 
+  border: solid red;
+  
+
+}
+
+.leftcard
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border-radius: 15px;
+  background-color: #FFFFFF;
+  height: 188px;
+  width: 245px;
+  box-shadow: 0 0 7px #c1c1c1;
+  border: solid gold;
+
+}
+
+.leftcardwrap
+{
+  display: flex;
+  flex-direction: column;
+  height: 188px;
+  width: 245px;
+  border: solid 1px #ffffff;
+  background-color: #ffffff;
+  border-radius: 10px 10px 0 0;
+  padding: 5px;
+  margin: 15px;
+  
+
+  
+}
+
+.hostingleftimg
+{
+  object-fit: cover;
+  height: 114px;
+  width: 235px;
+  overflow: hidden;
+
+}
+
+.lefcardfigcaption
+{
+  display: flex;
+  flex-direction: column;
+  margin: 15px 15px;
+  position: relative;
 
 }
 
@@ -219,80 +280,13 @@ word-spacing: 3em;
 }
 #hostingleftheader
 {
-
   grid-column: 1/-1;
   margin-left: 15px;
-  margin-bottom: -60px;
-  justify-content:center;
-  align-items: center;
-}
-
-
-#hostingleft
-{
-  display: grid;
-  grid-template-columns: 2fr 2fr 2fr;
-  grid-gap:;
-  background-color: #F2F2F2;  
-  border-radius: 15px;
-  padding-right: auto;
-  width: 66%;
-  margin-right: 30px;
-  justify-content: space-around;
-  align-items: center;
-  border: solid #f2F2F2
-  
-
-}
-
-.leftcardfigure
-{
-  display: column;
-  margin-top: 0.2em;
-}
-
-.hostingleftcard
-{
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  margin: 15px 30px 0 30px;
-  width: 240px;
-  height: 190px;
-  background-color: #FFFFFF;
-  border: solid white;
-  border-radius: 15px;
-  box-shadow: 0 0 7px #c1c1c1;
- 
-
-}
-
-.lefcardfigcaption
-{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding-left: 0.5em;
-  line-height:0.2em;  
-  
-
-  
-
 }
 
 
 
-/* COMPORTEMENT IMG */
 
-.hostingleftimg
-{
-  width: 235px;
-  height: 113px;
-  border-radius: 15px 15px 0 0;
-  object-fit: cover;
-  
-}
 
 .leftviewmore
 {
@@ -319,7 +313,6 @@ word-spacing: 3em;
   direction: row;
   border-radius: 15px;
   background-color: #F2F2F2;
-  width: 30%;
   border: solid #F2F2F2
   
  
@@ -330,7 +323,6 @@ word-spacing: 3em;
   display: flex;
   border-radius: 15px;
   margin: 15px;
-  width:90%;
   height: 144px;
   background-color: #FFFFFF;
   border: solid white;
