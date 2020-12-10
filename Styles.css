@@ -306,67 +306,59 @@ word-spacing: 3em;
 }
 
 /*aside*/
-.populartitle
-{
-  grid-column: 1/-1;
-  margin-left: 15px;
-  margin-bottom: -60px;
-  justify-content:center;
-  align-items: center;
-}
+
 
 .popular
 {
-  display: grid;
-  direction: row;
+  display: flex;
+  background-color: #F2F2F2;  
   border-radius: 15px;
-  background-color: #F2F2F2;
-  border: solid #F2F2F2
+  padding-right: auto;
+  width: 30%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  align-items: center;
+  justify-content: center;
   
- 
+}
+
+.popheader
+{
+  display: flex;
+  grid-column: 1/-1;
+  margin-left: 15px;  
+  justify-content:start;
+  align-items: start;
 }
 
 .popularcard
 {
   display: flex;
-  border-radius: 15px;
-  margin: 15px;
-  height: 144px;
   background-color: #FFFFFF;
-  border: solid white;
-  align-items: center;
-  justify-content: start;
+  border-radius: 15px;
   box-shadow: 0 0 7px #c1c1c1;
+  border: solid pink;   
+  height: 145px;
+  margin-bottom: 40px;
+  align-items: center;
+  justify-items: start;
   
  }
 
- .popularfigcaption
- {
-   display: flex;
-   flex-direction: column;
-   width: 200px;
-   height: 133px;
-   align-items: start;
-   font-size: auto; 
-   padding-left: 1em;
-   border: solid pink;
- }
-
- .popularcardfigure
+ .popwrap
  {
   display: flex;
-  flex-wrap: wrap;
-  margin: auto;
-  padding: auto;
-  justify-content: center;
-  align-items: center;
+  position: relative;
+  align-items: start;
+  justify-content: start;
   
  }
+
 
 .popularnotes
 {
-  padding-bottom: -100px;
-  
+  display: block;
+ 
   
 }
 
@@ -374,11 +366,14 @@ word-spacing: 3em;
 
 .popularimg
 {
+  display: block;
   width: 140px;
   height: 140px;
   border-radius: 15px 0 0 15px;
   object-fit: cover;
-  padding-left: 0.1em;
+  
+  
+
   
   
 }
