@@ -17,6 +17,8 @@ a {
 }
 
 header {
+  display:grid;
+  align-items: start;
   height: 7em;
   border: 5px solid transparent;
 }
@@ -35,6 +37,7 @@ header {
 .headerlink:active,
 .signup:active {
   color: #0065fc;
+  border-bottom-color: #0065FC;
 }
 
 .signup {
@@ -54,17 +57,25 @@ header {
 #searchform {
   display: inline-flex;
   margin-top: 1em;
+  height: 40px;
 }
 
 .searchbar {
   border: solid 0.1px #f2f2f2;
+  width: 200px;
+  font-weight: bold;
+  padding-left: 1em;
+  font-size: 16px;
+  text-decoration-color: black;
 }
 
 .fa-map-marker-alt {
   background-color: #f2f2f2;
-  padding: 0.7em;
+  padding: 1em;
   border-radius: 0.7em 0 0 0.7em;
-  text-align: center;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
   margin-left: 0.2em;
 }
 
@@ -82,7 +93,7 @@ header {
 #filters_block {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 1em;
+  margin-top: 2em;
 }
 
 #FiltersTitle {
@@ -93,35 +104,46 @@ header {
 
 .filters {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 1em;
+  margin-right: 1.5em;
   border: solid 3px #f2f2f2;
   border-radius: 2em;
   font-weight: bold;
   margin-bottom: 1em;
   padding: 0 3em 0 0;
+  flex-grow:
+
+  
+  
 }
 
 .filtersection {
-  height: 3em;
-  width: 3em;
   display: flex;
+  padding-left: 50px;
   align-items: center;
-  border-radius: 2em;
-  background-color: #deebff;
-  justify-content: center;
-  margin: -0.2em;
+  justify-content: end;
 }
 
 .filtericon {
-  color: blue;
-}
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: #deebff;
+  line-height: 17px;
+  color: #0065fc;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  border: 2px solid #deebff;
+  margin: -2px;
+  margin-left: -52px;
+
+
+} 
 
 .filtericontitle {
   display: flex;
-  align-items: auto;
-  justify-content: auto;
+  font-weight: bold;
 }
 
 .searchresult {
@@ -218,8 +240,8 @@ header {
   grid-column: 1/-1;
   margin-left: 15px;
   margin-bottom: -60px;
-  justify-content: center;
-  align-items: center;
+  justify-content: start;
+  align-items: start;
 }
 
 .leftviewmore {
@@ -246,9 +268,11 @@ header {
 .popheader {
   display: flex;
   grid-column: 1/-1;
-  margin-left: 15px;
-  justify-content: start;
-  align-items: start;
+  justify-content: space-between;
+  align-items: center;
+}
+.fa-chart-line {
+  display: flex;
 }
 
 .popularcard {
@@ -261,13 +285,12 @@ header {
   margin-bottom: 40px;
   align-items: center;
   justify-items: start;
+  object-fit: contain;
+
 }
 
 .popwrap {
   display: flex;
-  position: relative;
-  align-items: start;
-  justify-content: start;
 }
 
 .popularnotes {
@@ -275,7 +298,7 @@ header {
 }
 
 .popularimg {
-  display: block;
+  display: flex;
   width: 140px;
   height: 140px;
   border-radius: 15px 0 0 15px;
