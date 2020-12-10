@@ -1,185 +1,139 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap");
 
 /* Couleurs : Bleu #0065FC Bleu Clair #DEEBFF Gris fond: #F2F2F2*/
 
-*
-{
-  font-family:"Raleway", sans-serif;
-  
+* {
+  font-family: "Raleway", sans-serif;
 }
 
-
-body
-{
+body {
   font-size: 14px;
   margin: 0 30px 30px;
-  
-
 }
 
-a
-{
+a {
   color: initial;
-  text-decoration: none; 
+  text-decoration: none;
 }
 
-header
-{
+header {
   height: 7em;
   border: 5px solid transparent;
 }
 
-
-  .headerbar
-  {
+.headerbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
- 
-  
-
 }
 
-.navbar
-{
-margin-top: 3em;
-word-spacing: 3em;
-
+.navbar {
+  margin-top: 3em;
+  word-spacing: 3em;
 }
 
-
-
-.headerlink:active, .signup:active
-{
- color:#0065FC; 
+.headerlink:active,
+.signup:active {
+  color: #0065fc;
 }
 
-.signup
-{
-  color:#0065FC;
+.signup {
+  color: #0065fc;
 }
 
-.headerlink:hover
-{
-  color:#0065FC;
+.headerlink:hover {
+  color: #0065fc;
 }
 
-
-
-#title
-{
-  display:flex;
+#title {
+  display: flex;
   flex-direction: column;
   line-height: 0.1em;
-
-  
 }
 
-#searchform
-{
+#searchform {
   display: inline-flex;
   margin-top: 1em;
 }
 
-.searchbar
-{
-  border: solid 0.1px #F2F2F2;
+.searchbar {
+  border: solid 0.1px #f2f2f2;
 }
 
-.fa-map-marker-alt
-{
-  background-color: #F2F2F2;
+.fa-map-marker-alt {
+  background-color: #f2f2f2;
   padding: 0.7em;
-  border-radius: 0.7em 0  0 0.7em;
-  text-align: center; 
+  border-radius: 0.7em 0 0 0.7em;
+  text-align: center;
   margin-left: 0.2em;
-  
 }
 
-#searchbutton
-{
+#searchbutton {
   border-radius: 0 0.7em 0.7em 0;
   border-color: transparent;
-  background-color: #0065FC;
+  background-color: #0065fc;
   color: white;
 }
 
-.search_button_text
-{
+.search_button_text {
   font-weight: bold;
 }
 
-#filters_block
-{
+#filters_block {
   display: flex;
   flex-wrap: wrap;
   margin-top: 1em;
-
 }
 
-#FiltersTitle
-{
+#FiltersTitle {
   display: inline;
-  margin-right: 1em ;
+  margin-right: 1em;
   margin-top: 0.5em;
-  
 }
 
-.filters
-{
+.filters {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-right: 1em;
-  border: solid 3px #F2F2F2;
+  border: solid 3px #f2f2f2;
   border-radius: 2em;
   font-weight: bold;
   margin-bottom: 1em;
-  padding: 0 3em 0 0;  
+  padding: 0 3em 0 0;
 }
 
-.filtersection
-{
+.filtersection {
   height: 3em;
   width: 3em;
   display: flex;
   align-items: center;
   border-radius: 2em;
-  background-color: #DEEBFF;
+  background-color: #deebff;
   justify-content: center;
   margin: -0.2em;
-  
-
-
 }
 
-.filtericon
-{
+.filtericon {
   color: blue;
 }
 
-.filtericontitle
-{
- display: flex;
- align-items: auto;
- justify-content: auto;
+.filtericontitle {
+  display: flex;
+  align-items: auto;
+  justify-content: auto;
 }
 
-
-.searchresult
-{
+.searchresult {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   margin-right: 1em;
-  
-
 }
 
-.searchresulticon
-{
+.searchresulticon {
   display: flex;
-  border: solid 1px #F2F2F2;
+  border: solid 1px #f2f2f2;
   border-radius: 100%;
   margin-right: 1em;
   height: 1.5em;
@@ -189,29 +143,22 @@ word-spacing: 3em;
   font-size: 12px;
 }
 
-.resulticon
-{
-  Color: blue;
-
+.resulticon {
+  color: blue;
 }
-
 
 /*HEBERGEMENTS*/
 
-#hosting
-{
+#hosting {
   display: flex;
   justify-content: start;
   margin-top: 20px;
-  
-
 }
 
-#leftgrid
-{
+#leftgrid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  background-color: #F2F2F2;  
+  background-color: #f2f2f2;
   border-radius: 15px;
   padding-right: auto;
   width: 66%;
@@ -220,98 +167,73 @@ word-spacing: 3em;
   align-items: center;
   padding-top: 20px;
   padding-bottom: 20px;
-  
-  
-
 }
 
-.leftcard
-{
+.leftcard {
   display: flex;
-  align-items: center;  
+  align-items: center;
   justify-content: center;
   margin: 15px 30px 0 30px;
   width: 245px;
   height: 205px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border: 15px #ffff;
   border-radius: 15px;
   box-shadow: 0 0 7px #c1c1c1;
-  
-
 }
 
-.leftcardwrap
-{
+.leftcardwrap {
   display: flex;
   position: relative;
   flex-direction: column;
   align-items: start;
   justify-content: center;
-  
   border-radius: 10px 10px 0 0;
-  
-
-  
 }
 
-.hostingleftimg
-{
+.hostingleftimg {
   width: 235px;
   height: 113px;
   border-radius: 15px 15px 0 0;
   object-fit: cover;
-  
-
 }
 
-.lefcardfigcaption
-{
+.lefcardfigcaption {
   display: block;
+  line-height: 1em;
   flex-direction: column;
-  margin-left:15px;
-  
+  margin-left: 8px;
 }
 
-.leftcaptiontitle
-
-{
-  font-size: 1em;
+.leftcaptiontitle {
+  font-size: 1.1em;
 }
 
-.leftcaptiondescription, .popcaptiondescription, .popcaptiontitle
-{
-  font-size: 0.7em;
+.leftcaptiondescription,
+.popcaptiondescription,
+.popcaptiontitle {
+  font-size: 0.8em;
 }
-#hostingleftheader
-{
+#hostingleftheader {
   grid-column: 1/-1;
   margin-left: 15px;
   margin-bottom: -60px;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
 }
 
-
-
-
-
-.leftviewmore
-{
+.leftviewmore {
   font-weight: bold;
   margin: 15px;
   padding: 15px;
-  font-weight:16px;
-
+  font-weight: 16px;
 }
 
 /*aside*/
 
-
-.popular
-{
+.popular {
   display: flex;
-  background-color: #F2F2F2;  
+  background-color: #f2f2f2;
   border-radius: 15px;
   padding-right: auto;
   width: 30%;
@@ -319,216 +241,150 @@ word-spacing: 3em;
   padding-bottom: 20px;
   align-items: center;
   justify-content: center;
-  
 }
 
-.popheader
-{
+.popheader {
   display: flex;
   grid-column: 1/-1;
-  margin-left: 15px;  
-  justify-content:start;
+  margin-left: 15px;
+  justify-content: start;
   align-items: start;
 }
 
-.popularcard
-{
+.popularcard {
   display: flex;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 15px;
   box-shadow: 0 0 7px #c1c1c1;
-  border: solid pink;   
+  border: solid pink;
   height: 145px;
   margin-bottom: 40px;
   align-items: center;
   justify-items: start;
-  
- }
+}
 
- .popwrap
- {
+.popwrap {
   display: flex;
   position: relative;
   align-items: start;
   justify-content: start;
-  
- }
-
-
-.popularnotes
-{
-  display: block;
- 
-  
 }
 
+.popularnotes {
+  display: block;
+}
 
-
-.popularimg
-{
+.popularimg {
   display: block;
   width: 140px;
   height: 140px;
   border-radius: 15px 0 0 15px;
   object-fit: cover;
-  
-  
-
-  
-  
 }
 
 /*SYSTEME DE NOTATION*/
 
-.blue_star
-{
-  color: #0065FC;
+.blue_star {
+  color: #0065fc;
 }
 
-.grey_star
-{
-  color:#F2F2F2
+.grey_star {
+  color: #f2f2f2;
 }
 
 /* Activités*/
 
-.activitytitle
-{
+.activitytitle {
   display: flex;
   flex-direction: column;
   margin-bottom: -15px;
-
-
-  
 }
 
-#activity
-{
+#activity {
   margin-top: 40px;
   display: grid;
   grid-template: repeat(12, 1fr) / repeat(4, 1fr);
   gap: 40px;
   height: 550px;
-  
-  
-
-  
-  
-  
 }
-.acards
-{
+.acards {
   display: flex;
   flex-direction: column;
   border-radius: 15px;
   box-shadow: 0 0 7px #c1c1c1;
   overflow: hidden;
-  
-  
-  
-  
-  
 }
 
-.actwrap
-{
+.actwrap {
   display: flex;
   flex: 1;
   min-height: 0;
 }
 
-.actcardtitle
-{
+.actcardtitle {
   display: flex;
   margin: 15px 15px;
   position: relative;
   background-color: #ffffff;
 }
 
-
 /* Positionnement sur la grille */
 
-.activitycard1
-{
+.activitycard1 {
   grid-column: 1 / 2;
   grid-row: 2 / 12;
 }
 
-.activitycard2
-{
+.activitycard2 {
   grid-column: 2 / 3;
   grid-row: 2 / 8;
 }
 
-.activitycard3
-{
+.activitycard3 {
   grid-column: 2 / 3;
   grid-row: 8 / 12;
-
-
 }
 
-.activitycard4
-{
+.activitycard4 {
   grid-column: 3 / 4;
-  grid-row: 2 / 12 ;
+  grid-row: 2 / 12;
 }
 
-.activitycard5
-{
+.activitycard5 {
   grid-column: 4 / 4;
   grid-row: 2 / 7;
 }
 
-.activitycard6
-{
+.activitycard6 {
   grid-column: 4 / 4;
   grid-row: 7 / 12;
 }
 
 /* IMAGES ACTIVITES */
 
-
-.actcardimg
-{
+.actcardimg {
   object-fit: cover;
   height: 100%;
   width: 100%;
   position: relative;
-
 }
-
-
-
-
-
 
 /* FOOTER */
 
-footer
-{
-
-  display:flex;
+footer {
+  display: flex;
   margin-top: 30px;
-  background-color: #F2F2F2;
-  
-  
+  background-color: #f2f2f2;
 }
 
-
-
-.footer
-{
+.footer {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr ;
+  grid-template-columns: 1fr 1fr 1fr;
   align-items: start;
   justify-content: center;
-  
 }
 
-.footertitle
-{
+.footertitle {
   padding-left: 40px;
   font-weight: bold;
-
 }
