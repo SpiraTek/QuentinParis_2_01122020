@@ -15,6 +15,7 @@
   <!-- Pour barre de recherche : Form ou Input?-->
 
   <body>
+    <div id="#body">
     <!-- HEADER -->
     <header>
       <div class="headerbar">
@@ -36,7 +37,7 @@
     <main class="main">
       <!-- TOPBAR -->
       <div id="title">
-        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+        <h1 class="title">Trouvez votre hébergement pour des vacances de rêve</h1>
         <p class="subtitle">En plein centre ville ou en pleine nature</p>
       </div>
 
@@ -48,7 +49,7 @@
           <input
             class="searchbar"
             type="search"
-            placeholder="Marseille,France"
+            placeholder="Marseille, France"
             name="Recherche"
           />
           <button id="searchbutton" type="submit">
@@ -59,6 +60,7 @@
         <!-- Filtres -->
         <div id="filters_block">
           <h2 id="FiltersTitle">Filtres</h2>
+          <div id="filterwrap">
           <a href="#"> 
           <div class="filters">
             <div class="filtersection">
@@ -91,6 +93,7 @@
             </div>
           </div>
           </a>
+        </div>   
         </div>
         <div class="searchresult">
           <div class="searchresulticon">
@@ -124,7 +127,7 @@
                 <figcaption class="lefcardfigcaption">
                   <h3 class="leftcaptiontitle">Auberge de la Cannebière</h3>
                   <p class="leftcaptiondescription">
-                    Nuit à partir de<strong class="leftcardprice">25€</strong>
+                    Nuit à partir de<strong class="leftcardprice"> 25€</strong>
                   </p>
                   <div class="leftnotes">
                     <i class="fa fa-star blue_star"></i>
@@ -149,7 +152,7 @@
                 <figcaption class="lefcardfigcaption">
                   <h3 class="leftcaptiontitle">Hôtel du port</h3>
                   <p class="leftcaptiondescription">
-                    Nuit à partir de<strong class="leftcardprice">52€</strong>
+                    Nuit à partir de<strong class="leftcardprice"> 52€</strong>
                   </p>
                   <div class="leftnotes">
                     <i class="fa fa-star blue_star"></i>
@@ -174,7 +177,7 @@
                 <figcaption class="lefcardfigcaption">
                   <h3 class="leftcaptiontitle">Hôtel les mouettes</h3>
                   <p class="leftcaptiondescription">
-                    Nuit à partir de<strong class="leftcardprice">76€</strong>
+                    Nuit à partir de<strong class="leftcardprice"> 76€</strong>
                   </p>
                   <div class="leftnotes">
                     <i class="fa fa-star blue_star"></i>
@@ -199,7 +202,7 @@
                 <figcaption class="lefcardfigcaption">
                   <h3 class="leftcaptiontitle">Hôtel la mer</h3>
                   <p class="leftcaptiondescription">
-                    Nuit à partir de<strong class="leftcardprice">46€</strong>
+                    Nuit à partir de<strong class="leftcardprice"> 46€</strong>
                   </p>
                   <div class="leftnotes">
                     <i class="fa fa-star blue_star"></i>
@@ -224,7 +227,7 @@
                 <figcaption class="lefcardfigcaption">
                   <h3 class="leftcaptiontitle">Auberge le panier</h3>
                   <p class="leftcaptiondescription">
-                    Nuit à partir de<strong class="leftcardprice">23€</strong>
+                    Nuit à partir de<strong class="leftcardprice"> 23€</strong>
                   </p>
                   <div class="leftnotes">
                     <i class="fa fa-star blue_star"></i>
@@ -249,7 +252,7 @@
                 <figcaption class="lefcardfigcaption">
                   <h3 class="leftcaptiontitle">Hôtel chez Amina</h3>
                   <p class="leftcaptiondescription">
-                    Nuit à partir de<strong class="leftcardprice">96€</strong>
+                    Nuit à partir de<strong class="leftcardprice"> 96€</strong>
                   </p>
                   <div class="leftnotes">
                     <i class="fa fa-star blue_star"></i>
@@ -281,7 +284,7 @@
                   <figcaption class="popularfigcaption">
                     <h3 class="popcaptiontitle">Hôtel Le soleil du matin</h3>
                     <p class="popcaptiondescription">
-                      Nuit à partir de<strong class="popcardprice">128€</strong>
+                      Nuit à partir de<strong class="popcardprice"> 128€</strong>
                     </p>
                     <div class="popularnotes">
                       <i class="fa fa-star blue_star"></i>
@@ -301,7 +304,7 @@
                   <figcaption class="popularfigcaption">
                     <h3 class="popcaptiontitle">Au coeur de l'eau <br />Chambres d'hôtes</h3>
                     <p class="popcaptiondescription">
-                      Nuit à partir de<strong class="popcardprice">71€</strong>
+                      Nuit à partir de<strong class="popcardprice"> 71€</strong>
                     </p>
                     <div class="popularnotes">
                       <i class="fa fa-star blue_star"></i>
@@ -321,7 +324,7 @@
                   <figcaption class="popularfigcaption">
                     <h3 class="popcaptiontitle"> Hôtel Tout bleu et Blanc</h3>
                     <p class="popcaptiondescription">
-                      Nuit à partir de<strong class="popcardprice">68€</strong>
+                      Nuit à partir de<strong class="popcardprice"> 68€</strong>
                     </p>
                     <div class="popularnotes">
                       <i class="fa fa-star blue_star"></i>
@@ -390,6 +393,7 @@
 
     <!-- FOOTER -->
     <footer class="footer">
+     <div class="footerwrap">
       <div id="footer1">
         <h3 class="footertitle">A propos</h3>
         <ul class="footertxt" href="#">
@@ -422,7 +426,10 @@
           Nous contacter
         </ul>
       </div>
+    </div>   
     </footer>
     <!-- /FOOTER -->
+  </div>  
   </body>
+
 </html>
