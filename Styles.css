@@ -7,9 +7,13 @@
 }
 
 body {
-  font-size: 14px;
-  width: 95%;
   margin: auto;
+}
+
+.main{
+  max-width: 1440px;
+  margin:auto;
+  padding: 0 2em;
 }
 
 
@@ -23,12 +27,14 @@ a {
   align-items: center;
   justify-content: space-between;
   height: 7em;
-  width:98%;
+  max-width: 1440px;
+  margin: auto;
 }
 
 
 .navbar {
   word-spacing: 3.5em;
+  overflow: auto;
 }
 
 .headerlink:active,
@@ -49,6 +55,7 @@ a {
 #title {
   display: flex;
   flex-direction: column;
+  line-height: 1em;
 
 }
 
@@ -65,14 +72,14 @@ a {
 
 #searchform {
   display: inline-flex;
-  margin-top: 1em;
-  height: 45px;
+  margin-top: 0.5em;
+  height: 3em;
   position: relative;
 }
 
 .searchbar {
   border: solid 0.1px #f2f2f2;
-  width: 200px;
+  width: 224px;
   font-weight: bold;
   padding-left: 1em;
   font-size: 16px;
@@ -84,12 +91,12 @@ a {
 }
 
 .fa-map-marker-alt {
+  display: flex;
   background-color: #f2f2f2;
-  padding: 1em;
-  border-radius: 0.7em 0 0 0.7em;
   align-items: center;
-  align-content: center;
-  justify-content: center;
+  padding: 1.1em;
+  border-radius: 0.7em 0 0 0.7em;
+  font-size: 1.1em;
   margin-left: 0.2em;
 }
 
@@ -103,38 +110,35 @@ a {
 
 .search_button_text {
   font-weight: bold;
-  font-size: 16px;
+  font-size: 1em;
 }
 
 /* SECTION FILTRES */
 
 #filters_block {
   display: flex;
-  margin-top: 2em;
-  width: 80%;
+  margin-top: 1.1em;
+  align-items: center;
 }
 
 #FiltersTitle {
   display:flex;
   align-content: center;
-  font-size: 18px;
   font-weight: bold;
+  margin-right: 1em;
 
 }
 
 #filterwrap {
   display: flex;
-  justify-content:space-evenly ;
-  width: 100%;
 }
 
 .filtersection {
   display: flex;
   align-items: center;
-  border: solid 3px #F2F2F2;
+  margin-right: 2rem;
+  border: 2px solid lightgray;
   border-radius: 2em;
-  
-    
 }
 
 .filtericon {
@@ -143,8 +147,8 @@ a {
   justify-content: center;
   background-color: #deebff;
   color: #0065fc;
-  width: 41px;
-  height: 41px;
+  width: 2em;
+  height: 2em;
   border-radius: 100%;
   border: 3px solid #deebff;
   margin: -2px;
@@ -189,141 +193,154 @@ a {
 /*HEBERGEMENTS*/
 
 #hosting {
-  display: flex;
-  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 6fr 3fr;
+  column-gap: 2em;
+  height: 100%;
 }
 
 #leftgrid {
   display: grid;
+  column-gap: 2em;
+  row-gap: 2em;
   grid-template-columns: 1fr 1fr 1fr;
-  background-color: #f2f2f2;
-  border-radius: 15px;
-  margin-right: 45px;
-  padding: 10px;
-  width:70%;
-  justify-content: space-around;
-  align-content: space-around;
-  justify-items: stretch;
+  background-color: #f2f2f2;  
+  border-radius: 20px;
+  padding: 1em 2em 2em 2em; 
 }
-
-
-
 .leftcardwrap {
   display: flex;
+  margin: auto;
   flex-direction: column;
-  align-content: center;
-  justify-content: center;
-  border-radius: 15px;
-  border: 1px solid white;
+  border-radius: 20px;
+  border: 1px white;
   background-color: white;
   box-shadow: 0 0 7px #c1c1c1;
-  padding: 0.2em;
-
+  padding: 5px;
 }
 
 .hostingleftimg {
   width:  100%;
   height: 100%;
-  max-height: 113px;
-  border-radius: 15px 15px 0 0;
+  max-height: 8em;
+  border-radius: 20px 20px 0 0;
   object-fit: cover;
-  position: relative;
-  
 }
 
 .lefcardfigcaption {
-  display: block;
-  line-height: 1em;
+  display: flex;
   flex-direction: column;
-  margin-left: 8px;
+  font-size: 0.9em;
+  margin-left: 1em;
+
 }
 
 .leftcaptiontitle {
-  font-size: 1.1em;
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
 }
 .leftcaptiondescription
 {
-  margin-top:  -8px;
+ margin-top: 0.2em;
+ margin-bottom: 0.2em;
 }
 
 .leftnotes {
-  margin-top: -6px;
+  margin-top: 0.2em;
+  margin-bottom: 0.2em
+  
 }
 
 .leftcaptiondescription,
 .popcaptiondescription,
 .popcaptiontitle {
-  font-size: 0.8em;
+  font-size: 1em;
 }
 
 .hostinglefttitle{
-  font-weight: 900;
-
+  font-weight: bold;
+  margin-bottom: 0;
 }
 #hostingleftheader {
   grid-column: 1/-1;
-  margin-left: 3em;
-  display: flex;
-  
+  margin-bottom: 0;
 }
 
 .leftviewmore {
   font-weight: bold;
-  margin: 15px;
-  padding: 15px;
   font-weight: 16px;
 }
+
 
 /*aside*/
 
 .popular {
-  display: flex;
-  width: 30%;
+  display: grid;
   background-color: #f2f2f2;
-  border-radius: 15px;
-  padding-right: auto;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  align-items: center;
-  justify-content: center;
-}
-
-.popheader {
-  display: flex;
-  grid-column: 1/-1;
-  justify-content: space-between;
-  align-items: center;
-}
-.fa-chart-line {
-  display: flex;
-}
-
-.popularcard {
-  display: flex;
-  background-color: #ffffff;
-  border-radius: 15px;
-  box-shadow: 0 0 7px #c1c1c1;
-  border: solid pink;
-  height: 145px;
-  margin-bottom: 40px;
-  align-items: center;
-  justify-items: start;
-  object-fit: contain;
-
+  border-radius: 20px;
+  padding-bottom: 2em;
+  padding-top: 1em;
 }
 
 .popwrap {
   display: flex;
+  border-radius: 20px;
+  background-color: white;
+  border: 1px white;
+  box-shadow: 0 0 7px #c1c1c1;
+  padding: 5px;
+  height: 135px;
+  }
+
+
+.popheader {
+  display: flex;
+  justify-self: center;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+}
+
+.populartitle {
+  font-weight: bold;
+  display: flex;
+  
+}
+
+.popcard {
+  height: fit-content;
+  width: fit-content;
+}
+
+.popularcard {
+  height: fit-content;
+}
+
+.popularfigcaption {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1.5em;
+}
+
+.popcaptiontitle {
+  margin-bottom: 0.5em;
+
+}
+
+
+.popcaptiondescription {
+  margin-top: 0;
 }
 
 .popularnotes {
-  display: block;
+  margin-top: 0.8em;
 }
 
 .popularimg {
   display: flex;
-  width: 140px;
-  height: 140px;
+  width: 100%;
+  height: 100%;
+  max-width: 33%;
   border-radius: 15px 0 0 15px;
   object-fit: cover;
 }
@@ -356,7 +373,7 @@ a {
 .acards {
   display: flex;
   flex-direction: column;
-  border-radius: 15px;
+  border-radius: 20px;
   box-shadow: 0 0 7px #c1c1c1;
   overflow: hidden;
 }
