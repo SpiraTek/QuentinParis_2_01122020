@@ -440,6 +440,7 @@ footer {
 }
 
 .footer {
+  margin-top: 1em;
   display: grid;
   padding: 1em;
   background-color: #f2f2f2;
@@ -451,11 +452,8 @@ footer {
 }
 
 .footertitle {
+  padding-left: 2em;      
   display: flex;
   width: fit-content;
-
-}
-
-.footertxt {
-  padding-left: 0;
+  padding-bottom: 0.5em;
 }
