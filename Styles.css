@@ -11,9 +11,9 @@ body {
 }
 
 .main {
+  padding: 0 2em;
   max-width: 1440px;
   margin: auto;
-  padding: 0 2em;
 }
 
 a {
@@ -64,7 +64,7 @@ a:hover {
 #title {
   display: flex;
   flex-direction: column;
-  line-height: 1em;
+  line-height: 1.2em;
 }
 
 .title {
@@ -178,7 +178,7 @@ a:hover {
 .searchresult {
   display: flex;
   align-items: center;
-  margin: 1.1em 1.1em 1.1em 0;
+  margin: 1em 1em 1em 0;
 }
 
 .searchresulticon {
@@ -354,7 +354,7 @@ a:hover {
 }
 
 /* Activités*/
-@media all and (min-width: 1280px) {
+
 .activitytitle {
   display: flex;
   flex-direction: column;
@@ -429,7 +429,7 @@ a:hover {
   width: 100%;
   position: relative;
 }
- }
+ 
 /* FOOTER */
 
 footer {
