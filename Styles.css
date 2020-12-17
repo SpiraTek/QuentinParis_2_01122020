@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap");
 
+
+
 /* Couleurs : Bleu #0065FC Bleu Clair #DEEBFF Gris fond: #F2F2F2*/
 
 * {
@@ -38,12 +40,12 @@ a:hover {
 }
 
 .navbar {
-  word-spacing: 3.5em;
-  box-sizing: inherit ;
+  word-spacing: 4em;
 }
 
 .headerlink [data-active=true] {
   color: #0065FC;
+  border-top: 1px solid #0065fc;
 }
 
 .headerlink:active,
@@ -57,8 +59,13 @@ a:hover {
   font-weight: bold;
 }
 
+.signup:hover {
+  border-top: 1px solid #0065fc;
+}
+
 .headerlink:hover {
   color: #0065fc;
+  border-top: 1px solid #0065fc;
 }
 
 #title {
@@ -121,7 +128,7 @@ a:hover {
 
 .search_button_text {
   font-weight: bold;
-  font-size: 1em;
+  font-size: 1.2em;
 }
 
 /* SECTION FILTRES */
@@ -149,6 +156,7 @@ a:hover {
   margin-right: 2rem;
   border: 2px solid lightgray;
   border-radius: 2em;
+  width:auto;
 }
 
 .filtericon {
@@ -224,9 +232,11 @@ a:hover {
   background-color: white;
   box-shadow: 0 0 7px #c1c1c1;
   padding: 5px;
+  height:auto;
 }
 
 .hostingleftimg {
+  display: flex;
   width: 100%;
   height: 100%;
   max-height: 8em;
@@ -354,7 +364,7 @@ a:hover {
 }
 
 /* Activités*/
-
+@media all and (min-width: 1280px) {
 .activitytitle {
   display: flex;
   flex-direction: column;
@@ -366,7 +376,7 @@ a:hover {
   display: grid;
   grid-template: repeat(12, 1fr) / repeat(4, 1fr);
   gap: 40px;
-  height: 550px;
+  height: 600px;
 }
 .acards {
   display: flex;
@@ -424,12 +434,14 @@ a:hover {
 /* IMAGES ACTIVITES */
 
 .actcardimg {
+  display: flex;
   object-fit: cover;
   height: 100%;
   width: 100%;
   position: relative;
 }
- 
+  }
+
 /* FOOTER */
 
 footer {
