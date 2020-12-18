@@ -8,7 +8,8 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" media="all and (max-width: 1160px)" href="Responsivestyles.css" />
+    <link rel="stylesheet" media="all and (max-width: 767px)" href="stylesmobile.css" />
+    <link rel="stylesheet" media="all and (min-width: 768px) and (max-width: 1280px)" href="stylestab.css" />
     <title>Reservia</title>
   </head>
 
@@ -26,10 +27,10 @@
             alt="Reservia"
           />
           <nav class="navbar">
-            <a class="headerlink" href="#hosting">Hébergements</a>
-            <a class="headerlink" href="#activity">Activités</a>
-            <a class="signup" href="#">S'inscrire</a>
-          </nav>
+            <a class="headerlink nav1" href="#hosting">Hébergements</a>
+            <a class="headerlink nav2" href="#activity">Activités</a>
+          </nav> 
+            <a class="signup" href="#">S'inscrire</a>   
         </div>
       </header>
       <!-- /HEADER -->
@@ -66,36 +67,28 @@
             <h2 id="FiltersTitle">Filtres</h2>
             <div id="filterwrap">
               <a href="#">
-                <div class="filters">
                   <div class="filtersection">
                     <i class="fas fa-money-bill-wave fa-lg filtericon"></i>
                     <span class="filtericontitle">Économique</span>
                   </div>
-                </div>
               </a>
               <a href="#">
-                <div class="filters">
                   <div class="filtersection">
                     <i class="fas fa-child fa-lg filtericon"></i>
                     <span class="filtericontitle">Familial</span>
                   </div>
-                </div>
               </a>
               <a href="#">
-                <div class="filters">
                   <div class="filtersection">
                     <i class="fas fa-heart fa-lg filtericon"></i>
                     <span class="filtericontitle">Romantique</span>
                   </div>
-                </div>
               </a>
               <a href="#">
-                <div class="filters">
                   <div class="filtersection">
                     <i class="fas fa-dog fa-lg filtericon"></i>
                     <span class="filtericontitle">Animaux Autorisés</span>
                   </div>
-                </div>
               </a>
             </div>
           </div>
