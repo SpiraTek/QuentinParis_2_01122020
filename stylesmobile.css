@@ -43,7 +43,8 @@
   .headerlink {
     border-top: none;
     border-bottom: 3px solid #f2f2f2;
-    padding: 2em;
+    padding: 1em;
+    margin-top: 1em;
   }
   .nav1 {
     width: 50%;
@@ -65,6 +66,7 @@
     justify-content: flex-end;
     grid-area: si;
     margin-right: 1em;
+    margin-top: 0.6em;
   }
 
   .headerlink:hover {
@@ -132,7 +134,7 @@
 
   .filtersection {
     margin-bottom: 1em;
-    flex:1;
+    margin-right: 0.6em;
   }
 
   .filtericon {
@@ -146,10 +148,9 @@
     border-radius: 100%;
     border: 3px solid #deebff;
   }
-
-  .filters {
-    border: solid pink;
-    width: fit-content;
+  .filtericontitle {
+    padding-left: 0.75em;
+    padding-right:1em;
   }
 
 
@@ -163,7 +164,10 @@
 
   .resulttext {
     display: flex;
-    align-content: stretch;
+  }
+
+  .searchresulticon {
+    margin-right: 0.5em;
   }
 
   /*HEBERGEMENTS*/
@@ -171,14 +175,16 @@
   #hosting {
     display: grid;
     grid-template-columns: 1fr;
-    row-gap: 0em;
     height: 100%;
+    width:100%;
+    
   }
 
   #leftgrid {
     grid-template-columns: 1fr;
     background-color: white;
-    margin: 0em;
+    padding: 0;
+    
   }
   .leftcardwrap {
     display: flex;
@@ -188,51 +194,77 @@
     border: 1px white;
     background-color: white;
     box-shadow: 0 0 7px #c1c1c1;
-    padding: 5px;
+    height: 179px;
+    width: fit-content;
+   
   }
 
   #hostingleftheader {
-    grid-column: 1/-1;
+    display: flex;  
+    margin-top: 1em;
+    width: 100%;
   }
-
+  .hostingleftimg {
+    display: flex;
+    width: 100%;
+    max-height: 60%;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+  }
   .leftviewmore {
     font-weight: bold;
+  }
+  .lefcardfigcaption {
+    font-size: 0.8em;
+    margin-top: 0.5em;
   }
 
   /*aside*/
 
   .popular {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     border-radius: 0px;
     grid-row-start: 1;
-    width: auto;
-    margin: -1em;
     background-color: #f2f2f2;
+
+
   }
 
   .popwrap {
     display: flex;
+    flex: 1;
+    width: 100%;
     border-radius: 20px;
     background-color: white;
     border: 1px white;
     box-shadow: 0 0 7px #c1c1c1;
-    width: auto;
+    margin-left:0;
+    font-size: 0.9em;
+    box-sizing: border-box;
   }
+
 
   .popheader {
     display: flex;
     justify-self: center;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
   }
 
   .popularimg {
     display: flex;
+    align-content: center;
     width: 100%;
+    max-width: 40%;
     height: 100%;
-    max-width: 33%;
     border-radius: 15px 0 0 15px;
     object-fit: cover;
+  }
+
+  .fa-chart-line{
+    font-size: 1.5em;
   }
 
   /* Activités*/
@@ -246,9 +278,7 @@
     margin-top: 40px;
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1em;
-    margin: 1em;
-  }
+    gap: 1em;  }
   .acards {
     display: flex;
     flex-direction: column;
@@ -260,10 +290,12 @@
   .actwrap {
     display: flex;
     flex-direction: column;
+    flex: 1;
   }
 
   .actcardtitle {
     display: flex;
+    font-size: 0.9em;
     margin: 15px 15px;
     background-color: #ffffff;
   }
@@ -272,9 +304,11 @@
 
   .actcardimg {
     object-fit: cover;
+    display: flex;
     height: 100%;
     width: 100%;
-    max-height: 8em;
+    max-height: 9em;
+    position: relative;
     border-radius: 20px 20px 0 0;
   }
 
