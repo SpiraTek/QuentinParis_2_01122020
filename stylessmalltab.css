@@ -4,7 +4,7 @@
 
 /* Couleurs : Bleu #0065FC Bleu Clair #DEEBFF Gris fond: #F2F2F2*/
 
-@media all and (min-width: 600px) and (max-width: 890px) {
+@media all and (min-width: 600px) and (max-width: 975px) {
   * {
     font-family: "Raleway", sans-serif;
   }
