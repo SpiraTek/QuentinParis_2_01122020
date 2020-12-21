@@ -53,8 +53,7 @@
     width: 50%;
   }
   .headerlink:active,
-  .signup:active {
-    color: #0065fc;
+  .signup:active {  
     border-bottom-color: #0065fc;
   }
 
@@ -77,6 +76,7 @@
   #title {
     display: flex;
     width: auto;
+    margin-top: 1em;
   }
 
   .title {
@@ -89,18 +89,16 @@
     line-height: 1.2em;
   }
   #searchform {
-    display: inline-flex;
-    margin-top: 0.5em;
+    display: flex;
+    margin-top: 1em;
     height: 3em;
-    align-content: center;
     width: 100%;
   }
 
   .searchbar {
     border: solid 0.1px #f2f2f2;
     font-weight: bold;
-    overflow: visible;
-    width: 100%;
+    width:100%;
   }
 
   .fa-map-marker-alt {
@@ -108,21 +106,34 @@
     background-color: #f2f2f2;
     align-items: center;
     padding: 1em;
+    margin-left: 0;
     border-radius: 0.7em 0 0 0.7em;
     font-size: 1.1em;
   }
 
-  #searchbutton {
+  .searchbutton {
     display: none;
+  }
+  #searchbutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.2em;
+    border-color: transparent;
+    background-color: #0065fc;
+    width: auto;
+    color: white;
   }
 
   .altbutton {
     display: flex;
-    align-self: center;
-    padding: 1em;
     border-radius: 1em 1em 1em 1em;
-    background-color: #0065fc;
     color: white;
+    font-size: 1.4em;
+    padding-left: 0.4em;
+    padding-right: 0.4em;
+    
+
   }
 
   /* SECTION FILTRES */

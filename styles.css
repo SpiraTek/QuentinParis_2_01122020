@@ -125,12 +125,14 @@ a {
   width: 130px;
   color: white;
 }
-
+#searchbutton:hover {
+  cursor:pointer;
+}
 .altbutton {
   display: none;
 }
 
-.search_button_text {
+.searchbutton {
   font-weight: bold;
   font-size: 1.2em;
 }

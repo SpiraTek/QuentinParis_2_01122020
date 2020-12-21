@@ -112,8 +112,18 @@
     font-size: 1.1em;
   }
 
-  #searchbutton {
+  .searchbutton {
     display: none;
+  }
+  #searchbutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.2em;
+    border-color: transparent;
+    background-color: #0065fc;
+    width: auto;
+    color: white;
   }
 
   .altbutton {
