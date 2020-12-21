@@ -23,7 +23,6 @@ a {
 
 .headerlogo {
   display: flex;
-  margin-left: 1em;
 }
 .headerbar {
   display: grid;
@@ -62,6 +61,7 @@ a {
 .signup {
   color: #0065fc;
   font-weight: bold;
+  margin-right: 1em;
 }
 
 .headerlink:hover {

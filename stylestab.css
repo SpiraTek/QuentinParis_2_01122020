@@ -17,8 +17,9 @@
     padding: 0 2em;
   }
   .headerlogo {
-    display: flex;
+    margin-left: 2em;
   }
+ 
   .headerbar {
     display: grid;
     grid-template-columns: 2fr 1fr auto;
