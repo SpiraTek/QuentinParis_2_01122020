@@ -155,6 +155,11 @@ a {
   flex-wrap: wrap;
 }
 
+.filtersection:hover {
+  background-color: #0065fc;
+  transform: scale(1.02);
+}
+
 .filtersection {
   display: flex;
   align-items: center;
@@ -237,6 +242,10 @@ a {
   height: auto;
 }
 
+.leftcardwrap:hover {
+  transform: scale(1.02);
+}
+
 .hostingleftimg {
   display: flex;
   width: 100%;
@@ -310,6 +319,9 @@ a {
   padding: 5px;
   height: 135px;
 }
+.popwrap:hover {
+  transform: scale(1.02);
+}
 
 .popheader {
   display: flex;
@@ -361,7 +373,7 @@ a {
   border-radius: 15px 0 0 15px;
   object-fit: cover;
 }
-.fa-chart-line{
+.fa-chart-line {
   font-size: 1.5em;
 }
 /*SYSTEME DE NOTATION*/
@@ -375,7 +387,7 @@ a {
 }
 
 /* Activités*/
-@media all and (min-width: 768px) {
+@media all and (min-width: 890px) {
   .activitytitle {
     display: flex;
     flex-direction: column;
@@ -452,13 +464,11 @@ a {
     position: relative;
   }
 }
+.acards:hover {
+  transform: scale(1.02);
+}
 
 /* FOOTER */
-
-footer {
-  background-color: #f2f2f2;
-  width: 100%;
-}
 
 .footer {
   margin-top: 1em;
@@ -477,6 +487,11 @@ footer {
   display: flex;
   width: fit-content;
   padding-bottom: 0.5em;
+}
+
+.footertxt:hover {
+  transform: scale(1.02);
+  text-decoration: underline;
 }
 li {
   list-style: none;
