@@ -8,6 +8,9 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" media="all and (max-width: 600px)" href="stylesmobile.css" />
+    <link rel="stylesheet" media="all and (min-width: 600px) and (max-width: 975px)" href="stylessmalltab.css" />
+    <link rel="stylesheet" media="all and (min-width: 975px) and (max-width: 1300px)" href="stylestab.css" />
     <title>Reservia</title>
   </head>
 
@@ -25,10 +28,10 @@
             alt="Reservia"
           />
           <nav class="navbar">
-            <a class="headerlink" href="#lodging">Hébergements</a>
-            <a class="headerlink" href="#activities">Activités</a>
-            <a class="signup" href="#">S'inscrire</a>
-          </nav>
+            <a class="headerlink nav1" href="#hosting">Hébergements</a>
+            <a class="headerlink nav2" href="#activity">Activités</a>
+          </nav> 
+            <a class="signup" href="#">S'inscrire</a>   
         </div>
       </header>
       <!-- /HEADER -->
@@ -58,42 +61,35 @@
               <!-- Désactiver le bouton-->
               <span class="search_button_text">Rechercher</span>
             </button>
+            <i class="fas fa-search altbutton"></i>
           </form>
           <!-- Filtres -->
           <div id="filters_block">
             <h2 id="FiltersTitle">Filtres</h2>
             <div id="filterwrap">
               <a href="#">
-                <div class="filters">
                   <div class="filtersection">
                     <i class="fas fa-money-bill-wave fa-lg filtericon"></i>
                     <span class="filtericontitle">Économique</span>
                   </div>
-                </div>
               </a>
               <a href="#">
-                <div class="filters">
                   <div class="filtersection">
                     <i class="fas fa-child fa-lg filtericon"></i>
                     <span class="filtericontitle">Familial</span>
                   </div>
-                </div>
               </a>
               <a href="#">
-                <div class="filters">
                   <div class="filtersection">
                     <i class="fas fa-heart fa-lg filtericon"></i>
                     <span class="filtericontitle">Romantique</span>
                   </div>
-                </div>
               </a>
               <a href="#">
-                <div class="filters">
                   <div class="filtersection">
                     <i class="fas fa-dog fa-lg filtericon"></i>
                     <span class="filtericontitle">Animaux Autorisés</span>
                   </div>
-                </div>
               </a>
             </div>
           </div>
@@ -235,7 +231,7 @@
                     alt=""
                   />
                   <figcaption class="lefcardfigcaption">
-                    <h3 class="leftcaptiontitle">Auberge le panier</h3>
+                    <h3 class="leftcaptiontitle">Auberge le Panier</h3>
                     <p class="leftcaptiondescription">
                       Nuit à partir de<strong class="leftcardprice">
                         23€</strong
@@ -288,7 +284,7 @@
           <aside class="popular">
             <header class="popheader">
               <h2 class="populartitle">Les plus populaires</h2>
-              <i class="fas fa-chart-line fa-2x"></i>
+              <i class="fas fa-chart-line"></i>
             </header>
             <article class="popularcard">
               <a href="#" class="popcard">
@@ -416,34 +412,48 @@
         <div class="footerwrap">
           <div id="footer1">
             <h3 class="footertitle">A propos</h3>
-            <ul class="footertxt" href="#">
-              Fonctionnement du site
+            <ul class="footertxt">
+              <a href="#">
+              <li>Fonctionnement du site</li>
+              </a>
             </ul>
-            <ul class="footertxt" href="#">
-              Conditions générales de vente
+            <ul class="footertxt">
+              <a href="#">
+              <li>Conditions générales de vente</li>
+              <a href="#">
             </ul>
-            <ul class="footertxt" href="#">
-              Données et confidentialité
+            <ul class="footertxt">
+              <a href="#">
+              <li>Données et confidentialité</li>
+              </a>
             </ul>
           </div>
 
           <div class="footer2">
             <h3 class="footertitle">Nos hébergements</h3>
-            <ul class="footertxt" href="#">
-              Charte qualité
+            <ul class="footertxt">
+              <a href="#">
+              <li>Charte qualité</li>
+              </a>
             </ul>
-            <ul class="footertxt" href="#">
-              Soumettre votre hôtel
+            <ul class="footertxt">
+              <a href="#">
+              <li>Soumettre votre hôtel</li>
+              </a>
             </ul>
           </div>
 
           <div class="footer3">
             <h3 class="footertitle">Assistance</h3>
-            <ul class="footertxt" href="#">
-              Centre d'aide
+            <ul class="footertxt">
+              <a href="#">
+              <li>Centre d'aide</li>
+              </a>
             </ul>
-            <ul class="footertxt" href="#">
-              Nous contacter
+            <ul class="footertxt">
+              <a href="#">
+              <li>Nous contacter</li>
+              </a>
             </ul>
           </div>
         </div>
