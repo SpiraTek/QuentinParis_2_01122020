@@ -305,14 +305,13 @@ a {
 
 /*aside*/
 
-.popular {
+#popular {
   display: grid;
   background-color: #f2f2f2;
   border-radius: 20px;
   padding-bottom: 2em;
   padding-top: 1em;
 }
-
 .popwrap {
   display: flex;
   border-radius: 20px;
@@ -332,17 +331,12 @@ a {
   justify-content: space-between;
   align-items: center;
   width: 85%;
-  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 .populartitle {
   font-weight: bold;
   display: flex;
-}
-
-.popcard {
-  height: fit-content;
-  width: fit-content;
 }
 
 .popularcard {
@@ -393,8 +387,7 @@ a {
 @media all and (min-width: 975px) {
   .activitytitle {
     display: flex;
-    flex-direction: column;
-    margin-bottom: -15px;
+    margin-bottom: 0;
   }
 
   #activity {

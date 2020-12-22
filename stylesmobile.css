@@ -191,7 +191,7 @@
   #hosting {
     display: grid;
     grid-template-columns: 1fr;
-    height: 100%;
+    height: auto;
     width: auto;
   }
 
@@ -200,6 +200,7 @@
     grid-template-columns: 1fr;
     background-color: white;
     padding: 0;
+    gap: 1em;
   }
   .leftcardwrap {
     display: flex;
@@ -213,11 +214,6 @@
     width: auto;
   }
 
-  #hostingleftheader {
-    display: flex;
-    margin-top: 1em;
-    width: 100%;
-  }
   .hostingleftimg {
     display: flex;
     width: 100%;
@@ -232,39 +228,42 @@
     margin-top: 0.4em;
   }
   #hostingleftheader {
-    justify-content: center;
+    display: flex;
+    width: 100%;
     grid-column: 1/-1;
-    margin-bottom: 0;
-    margin: 0;
+    margin: 1em 0 1em 0;
   }
 
   /*aside*/
 
-  .popular {
+  #popular {
     display: grid;
-    grid-template-columns: 1fr;
     border-radius: 0px;
+    background-color: #f2f2f2;
+    width: auto;
+    height: auto;
+    gap: 1em;
+    margin-left: -1em;
+    margin-right: -1em;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  .popular {
     grid-row-start: 1;
     background-color: #f2f2f2;
-    margin: 0;
-    margin-left: -1em;
-    padding-left: 1em;
-    margin-right: -1em;
-    padding-right: 1em;
-    padding-top: 0;
+    width: 100%;
+
   }
 
   .popwrap {
     display: flex;
-    flex: 1;
-    width: 100%;
+    margin: auto;
+    width: auto;
     border-radius: 20px;
     background-color: white;
     border: 1px white;
     box-shadow: 0 0 7px #c1c1c1;
-    margin-left: 0;
     font-size: 0.9em;
-    box-sizing: border-box;
   }
 
   .popheader {
@@ -273,6 +272,8 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   .popularimg {
@@ -281,7 +282,7 @@
     width: 100%;
     max-width: 40%;
     height: 100%;
-    border-radius: 15px 0 0 15px;
+    border-radius: 20px 0 0 20px;
     object-fit: cover;
   }
 
@@ -289,11 +290,14 @@
     font-size: 1.5em;
   }
 
+  .popularnotes {
+    margin-top: 2em;
+  }
+
   /* Activités*/
 
   .activitytitle {
     display: flex;
-    flex-direction: column;
   }
 
   #activity {

@@ -139,13 +139,16 @@
 
   /*aside*/
 
-  .popular {
+  #popular {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     border-radius: 20px;
     grid-row-start: 1;
     background-color: #f2f2f2;
     padding: 1em 1em 2em 1em;
+  }
+  .popular {
+    grid-row-start: 1;
   }
 
   .popwrap {
