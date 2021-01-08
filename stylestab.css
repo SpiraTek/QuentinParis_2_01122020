@@ -1,15 +1,13 @@
-/* RESPONSIVE */
+/* RESPONSIVE TABLETTE*/
 
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap");
 
 /* Couleurs : Bleu #0065FC Bleu Clair #DEEBFF Gris fond: #F2F2F2*/
 
 @media all and (min-width: 975px) and (max-width: 1300px) {
+  
   * {
     font-family: "Raleway", sans-serif;
-  }
-
-  body {
   }
 
   .main {
@@ -19,7 +17,7 @@
   .headerlogo {
     margin-left: 2em;
   }
- 
+
   .headerbar {
     display: grid;
     grid-template-columns: 2fr 1fr auto;

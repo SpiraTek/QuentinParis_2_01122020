@@ -1,4 +1,4 @@
-/* RESPONSIVE */
+/* RESPONSIVE MOBILE*/
 
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap");
 
@@ -53,7 +53,7 @@
     width: 50%;
   }
   .headerlink:active,
-  .signup:active {  
+  .signup:active {
     border-bottom-color: #0065fc;
   }
 
@@ -98,7 +98,7 @@
   .searchbar {
     border: solid 0.1px #f2f2f2;
     font-weight: bold;
-    width:100%;
+    width: 100%;
   }
 
   .fa-map-marker-alt {
@@ -132,8 +132,6 @@
     font-size: 1.4em;
     padding-left: 0.4em;
     padding-right: 0.4em;
-    
-
   }
 
   /* SECTION FILTRES */
@@ -252,7 +250,6 @@
     grid-row-start: 1;
     background-color: #f2f2f2;
     width: 100%;
-
   }
 
   .popwrap {

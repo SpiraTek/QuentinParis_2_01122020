@@ -3,16 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://kit.fontawesome.com/3e6a841702.js"crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/3e6a841702.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" media="all and (max-width: 600px)" href="stylesmobile.css" />
-    <link rel="stylesheet" media="all and (min-width: 600px) and (max-width: 975px)" href="stylessmalltab.css" />
-    <link rel="stylesheet" media="all and (min-width: 975px) and (max-width: 1300px)" href="stylestab.css" />
+    <link
+      rel="stylesheet"
+      media="all and (max-width: 600px)"
+      href="stylesmobile.css"
+    />
+    <!--Mobiles-->
+    <link
+      rel="stylesheet"
+      media="all and (min-width: 600px) and (max-width: 975px)"
+      href="stylessmalltab.css"
+    />
+    <!--Petite Tablettes-->
+    <link
+      rel="stylesheet"
+      media="all and (min-width: 975px) and (max-width: 1300px)"
+      href="stylestab.css"
+    />
+    <!--Tablettes-->
     <title>Reservia</title>
   </head>
-
-  <!--Voir s'il vaut mieux utiliser des class ou des id-->
-  <!-- Pour barre de recherche : Form ou Input?-->
 
   <body>
     <div id="#body">
@@ -25,10 +40,15 @@
             alt="Reservia"
           />
           <nav class="navbar">
-            <a class="headerlink nav1" href="#hosting">Hébergements</a>
-            <a class="headerlink nav2" href="#activity">Activités</a>
-          </nav> 
-            <a class="signup" href="#subscribe">S'inscrire</a>   
+            <a class="headerlink nav1" href="#hosting" data-active="true"
+              >Hébergements</a
+            >
+            <!-- Actuellement ACTIF-->
+            <a class="headerlink nav2" href="#activity" data-active="false"
+              >Activités</a
+            >
+          </nav>
+          <a class="signup" href="#subscribe">S'inscrire</a>
         </div>
       </header>
       <!-- /HEADER -->
@@ -56,36 +76,37 @@
             />
             <button id="searchbutton" type="submit">
               <span class="searchbutton">Rechercher</span>
-              <i class="altbutton fas fa-search"></i>    <!-- Bouton Mobile -->
-            </button> 
+              <i class="altbutton fas fa-search"></i>
+              <!-- Bouton Mobile -->
+            </button>
           </form>
           <!-- Filtres -->
           <div id="filters_block">
             <h2 id="FiltersTitle">Filtres</h2>
             <div id="filterwrap">
               <a href="#">
-                  <div class="filtersection">
-                    <i class="fas fa-money-bill-wave fa-lg filtericon"></i>
-                    <span class="filtericontitle">Économique</span>
-                  </div>
+                <div class="filtersection">
+                  <i class="fas fa-money-bill-wave fa-lg filtericon"></i>
+                  <span class="filtericontitle">Économique</span>
+                </div>
               </a>
               <a href="#">
-                  <div class="filtersection">
-                    <i class="fas fa-child fa-lg filtericon"></i>
-                    <span class="filtericontitle">Familial</span>
-                  </div>
+                <div class="filtersection">
+                  <i class="fas fa-child fa-lg filtericon"></i>
+                  <span class="filtericontitle">Familial</span>
+                </div>
               </a>
               <a href="#">
-                  <div class="filtersection">
-                    <i class="fas fa-heart fa-lg filtericon"></i>
-                    <span class="filtericontitle">Romantique</span>
-                  </div>
+                <div class="filtersection">
+                  <i class="fas fa-heart fa-lg filtericon"></i>
+                  <span class="filtericontitle">Romantique</span>
+                </div>
               </a>
               <a href="#">
-                  <div class="filtersection">
-                    <i class="fas fa-dog fa-lg filtericon"></i>
-                    <span class="filtericontitle">Animaux Autorisés</span>
-                  </div>
+                <div class="filtersection">
+                  <i class="fas fa-dog fa-lg filtericon"></i>
+                  <span class="filtericontitle">Animaux Autorisés</span>
+                </div>
               </a>
             </div>
           </div>
@@ -115,13 +136,14 @@
                   <img
                     class="hostingleftimg"
                     src="IMG/hostings/hostings1.jpg"
-                    alt=""
+                    alt="Auberge de la Cannebière"
                   />
                   <figcaption class="lefcardfigcaption">
                     <h3 class="leftcaptiontitle">Auberge de la Cannebière</h3>
                     <p class="leftcaptiondescription">
                       Nuit à partir de<strong class="leftcardprice">
-                        25€</strong>
+                        25€</strong
+                      >
                     </p>
                     <div class="leftnotes">
                       <i class="fa fa-star blue_star"></i>
@@ -141,13 +163,14 @@
                   <img
                     class="hostingleftimg"
                     src="IMG/hostings/hostings2.jpg"
-                    alt=""
+                    alt="Hôtel du Port"
                   />
                   <figcaption class="lefcardfigcaption">
                     <h3 class="leftcaptiontitle">Hôtel du port</h3>
                     <p class="leftcaptiondescription">
                       Nuit à partir de<strong class="leftcardprice">
-                        52€</strong>
+                        52€</strong
+                      >
                     </p>
                     <div class="leftnotes">
                       <i class="fa fa-star blue_star"></i>
@@ -167,13 +190,14 @@
                   <img
                     class="hostingleftimg"
                     src="IMG/hostings/hostings3.jpg"
-                    alt=""
+                    alt="Hôtel les Mouettes"
                   />
                   <figcaption class="lefcardfigcaption">
                     <h3 class="leftcaptiontitle">Hôtel les mouettes</h3>
                     <p class="leftcaptiondescription">
                       Nuit à partir de<strong class="leftcardprice">
-                        76€</strong>
+                        76€</strong
+                      >
                     </p>
                     <div class="leftnotes">
                       <i class="fa fa-star blue_star"></i>
@@ -193,13 +217,14 @@
                   <img
                     class="hostingleftimg"
                     src="IMG/hostings/hostings4.jpg"
-                    alt=""
+                    alt="Hôtel la Mer"
                   />
                   <figcaption class="lefcardfigcaption">
                     <h3 class="leftcaptiontitle">Hôtel la mer</h3>
                     <p class="leftcaptiondescription">
                       Nuit à partir de<strong class="leftcardprice">
-                        46€</strong>
+                        46€</strong
+                      >
                     </p>
                     <div class="leftnotes">
                       <i class="fa fa-star blue_star"></i>
@@ -225,7 +250,8 @@
                     <h3 class="leftcaptiontitle">Auberge le Panier</h3>
                     <p class="leftcaptiondescription">
                       Nuit à partir de<strong class="leftcardprice">
-                        23€</strong>
+                        23€</strong
+                      >
                     </p>
                     <div class="leftnotes">
                       <i class="fa fa-star blue_star"></i>
@@ -245,13 +271,14 @@
                   <img
                     class="hostingleftimg"
                     src="IMG/hostings/hostings6.jpg"
-                    alt=""
+                    alt="Hôtel chez Amina"
                   />
                   <figcaption class="lefcardfigcaption">
                     <h3 class="leftcaptiontitle">Hôtel chez Amina</h3>
                     <p class="leftcaptiondescription">
                       Nuit à partir de<strong class="leftcardprice">
-                        96€</strong>
+                        96€</strong
+                      >
                     </p>
                     <div class="leftnotes">
                       <i class="fa fa-star blue_star"></i>
@@ -272,124 +299,165 @@
 
           <aside class="popular">
             <div id="popular">
-            <header class="popheader">
-              <h2 class="populartitle">Les plus populaires</h2>
-              <i class="fas fa-chart-line"></i>
-            </header>
-            <article class="popularcard">
-              <a href="#" class="pop1">
-                <figure class="popwrap">
-                  <img class="popularimg" src="IMG/hostings/pop1.jpg" alt="" />
-                  <figcaption class="popularfigcaption">
-                    <h3 class="popcaptiontitle">
-                      Hôtel Le soleil du <br />matin
-                    </h3>
-                    <p class="popcaptiondescription">
-                      Nuit à partir de<strong class="popcardprice">
-                        128€</strong
-                      >
-                    </p>
-                    <div class="popularnotes">
-                      <i class="fa fa-star blue_star"></i>
-                      <i class="fa fa-star blue_star"></i>
-                      <i class="fa fa-star blue_star"></i>
-                      <i class="fa fa-star blue_star"></i>
-                      <i class="fa fa-star blue_star"></i>
-                    </div>
-                  </figcaption>
-                </figure>
-              </a>
-            </article>
-            <article class="popularcard">
-              <a href="#" class="pop2">
-                <figure class="popwrap">
-                  <img class="popularimg" src="IMG/hostings/pop2.jpg" alt="" />
-                  <figcaption class="popularfigcaption">
-                    <h3 class="popcaptiontitle">
-                      Au coeur de l'eau <br />Chambres d'hôtes
-                    </h3>
-                    <p class="popcaptiondescription">
-                      Nuit à partir de<strong class="popcardprice"> 71€</strong>
-                    </p>
-                    <div class="popularnotes">
-                      <i class="fa fa-star blue_star"></i>
-                      <i class="fa fa-star blue_star"></i>
-                      <i class="fa fa-star blue_star"></i>
-                      <i class="fa fa-star blue_star"></i>
-                      <i class="fa fa-star grey_star"></i>
-                    </div>
-                  </figcaption>
-                </figure>
-              </a>
-            </article>
-            <article class="popularcard">
-              <a href="#" class="pop3">
-                <figure class="popwrap">
-                  <img class="popularimg" src="IMG/hostings/pop3.jpg" alt="" />
-                  <figcaption class="popularfigcaption">
-                    <h3 class="popcaptiontitle">
-                      Hôtel Tout bleu et <br />Blanc
-                    </h3>
-                    <p class="popcaptiondescription">
-                      Nuit à partir de<strong class="popcardprice"> 68€</strong>
-                    </p>
-                    <div class="popularnotes">
-                      <i class="fa fa-star blue_star"></i>
-                      <i class="fa fa-star blue_star"></i>
-                      <i class="fa fa-star blue_star"></i>
-                      <i class="fa fa-star blue_star"></i>
-                      <i class="fa fa-star grey_star"></i>
-                    </div>
-                  </figcaption>
-                </figure>
-              </a>
-            </article>
+              <header class="popheader">
+                <h2 class="populartitle">Les plus populaires</h2>
+                <i class="fas fa-chart-line"></i>
+              </header>
+              <article class="popularcard">
+                <a href="#" class="pop1">
+                  <figure class="popwrap">
+                    <img
+                      class="popularimg"
+                      src="IMG/hostings/pop1.jpg"
+                      alt="Hôtel le Soleil du Matin"
+                    />
+                    <figcaption class="popularfigcaption">
+                      <h3 class="popcaptiontitle">
+                        Hôtel Le soleil du <br />matin
+                      </h3>
+                      <p class="popcaptiondescription">
+                        Nuit à partir de<strong class="popcardprice">
+                          128€</strong
+                        >
+                      </p>
+                      <div class="popularnotes">
+                        <i class="fa fa-star blue_star"></i>
+                        <i class="fa fa-star blue_star"></i>
+                        <i class="fa fa-star blue_star"></i>
+                        <i class="fa fa-star blue_star"></i>
+                        <i class="fa fa-star blue_star"></i>
+                      </div>
+                    </figcaption>
+                  </figure>
+                </a>
+              </article>
+              <article class="popularcard">
+                <a href="#" class="pop2">
+                  <figure class="popwrap">
+                    <img
+                      class="popularimg"
+                      src="IMG/hostings/pop2.jpg"
+                      alt="Au Coeur de l'eau"
+                    />
+                    <figcaption class="popularfigcaption">
+                      <h3 class="popcaptiontitle">
+                        Au coeur de l'eau <br />Chambres d'hôtes
+                      </h3>
+                      <p class="popcaptiondescription">
+                        Nuit à partir de<strong class="popcardprice">
+                          71€</strong
+                        >
+                      </p>
+                      <div class="popularnotes">
+                        <i class="fa fa-star blue_star"></i>
+                        <i class="fa fa-star blue_star"></i>
+                        <i class="fa fa-star blue_star"></i>
+                        <i class="fa fa-star blue_star"></i>
+                        <i class="fa fa-star grey_star"></i>
+                      </div>
+                    </figcaption>
+                  </figure>
+                </a>
+              </article>
+              <article class="popularcard">
+                <a href="#" class="pop3">
+                  <figure class="popwrap">
+                    <img
+                      class="popularimg"
+                      src="IMG/hostings/pop3.jpg"
+                      alt="Hôtel Tout Bleu et Blanc"
+                    />
+                    <figcaption class="popularfigcaption">
+                      <h3 class="popcaptiontitle">
+                        Hôtel Tout bleu et <br />Blanc
+                      </h3>
+                      <p class="popcaptiondescription">
+                        Nuit à partir de<strong class="popcardprice">
+                          68€</strong
+                        >
+                      </p>
+                      <div class="popularnotes">
+                        <i class="fa fa-star blue_star"></i>
+                        <i class="fa fa-star blue_star"></i>
+                        <i class="fa fa-star blue_star"></i>
+                        <i class="fa fa-star blue_star"></i>
+                        <i class="fa fa-star grey_star"></i>
+                      </div>
+                    </figcaption>
+                  </figure>
+                </a>
+              </article>
             </div>
           </aside>
         </section>
 
         <!--/Populaires-->
+
         <!-- Activités-->
         <section id="activity">
           <h2 class="activitytitle">Activités à Marseille</h2>
           <a href="#" class="acards activitycard1">
             <div class="actwrap">
-              <img class="actcardimg" src="IMG/activities/act1.jpg" alt="" />
+              <img
+                class="actcardimg"
+                src="IMG/activities/act1.jpg"
+                alt="Vieux Port"
+              />
             </div>
             <h3 class="actcardtitle">Vieux Port</h3>
           </a>
 
           <a href="#" class="acards activitycard2">
             <div class="actwrap">
-              <img class="actcardimg" src="IMG/activities/act2.jpg" alt="" />
+              <img
+                class="actcardimg"
+                src="IMG/activities/act2.jpg"
+                alt="Fort de Pomègues"
+              />
             </div>
             <h3 class="actcardtitle">Fort de Pomègues</h3>
           </a>
 
           <a href="#" class="acards activitycard3">
             <div class="actwrap">
-              <img class="actcardimg" src="IMG/activities/act3.jpg" alt="" />
+              <img
+                class="actcardimg"
+                src="IMG/activities/act3.jpg"
+                alt="Ile du Frioul"
+              />
             </div>
             <h3 class="actcardtitle">Ile du Frioul</h3>
           </a>
 
           <a href="#" class="acards activitycard4">
             <div class="actwrap">
-              <img class="actcardimg" src="IMG/activities/act4.jpg" alt="" />
+              <img
+                class="actcardimg"
+                src="IMG/activities/act4.jpg"
+                alt="Parc National des Calanques"
+              />
             </div>
             <h3 class="actcardtitle">Parc National des Calanques</h3>
           </a>
 
           <a href="#" class="acards activitycard5">
             <div class="actwrap">
-              <img class="actcardimg" src="IMG/activities/act5.jpg" alt="" />
+              <img
+                class="actcardimg"
+                src="IMG/activities/act5.jpg"
+                alt="Notre Dame de la Garde"
+              />
             </div>
             <h3 class="actcardtitle">Notre-Dame-de-la-Garde</h3>
           </a>
 
           <a href="#" class="acards activitycard6">
             <div class="actwrap">
-              <img class="actcardimg" src="IMG/activities/act6.jpg" alt="" />
+              <img
+                class="actcardimg"
+                src="IMG/activities/act6.jpg"
+                alt="Parc Longchamp"
+              />
             </div>
             <h3 class="actcardtitle">Parc Longchamp</h3>
           </a>
@@ -429,7 +497,7 @@
             <ul class="footertxt">
               <li><a href="#">Centre d'aide</a></li>
             </ul>
-            <ul class="footertxt">     
+            <ul class="footertxt">
               <li><a href="#">Nous contacter</a></li>
             </ul>
           </div>

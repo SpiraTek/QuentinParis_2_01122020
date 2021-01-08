@@ -1,4 +1,4 @@
-/* RESPONSIVE */
+/* RESPONSIVE PETITES TABLETTES*/
 
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap");
 
@@ -246,7 +246,7 @@
     box-shadow: 0 0 7px #c1c1c1;
     padding: 5px;
     height: 135px;
-    width: 90%; 
+    width: 90%;
     margin: auto;
   }
   .popular {
@@ -263,7 +263,7 @@
   }
   .populartitle {
     margin-left: 1em;
-    margin-bottom:0;
+    margin-bottom: 0;
   }
   .fa-chart-line {
     margin-right: 1em;
