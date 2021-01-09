@@ -38,6 +38,7 @@
     justify-content: space-around;
     grid-area: na;
     text-align: center;
+    margin-left: 0;
   }
 
   .headerlink {
@@ -46,16 +47,18 @@
     padding: 1em;
     margin-top: 1em;
   }
+
+  .headerlink[data-active="true"] {
+    color: #0065fc;
+    border-top: transparent;
+    border-bottom: solid #0065fc;
+    }
+
   .nav1 {
     width: 50%;
   }
   .nav2 {
     width: 50%;
-  }
-  .headerlink:active,
-  .signup:active {
-    color: #0065fc;
-    border-bottom-color: #0065fc;
   }
 
   .signup {
