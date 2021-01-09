@@ -23,12 +23,12 @@ a {
 
 .headerlogo {
   display: flex;
+  margin-left: 2em;
 }
 .headerbar {
   display: grid;
   grid-template-columns: 2fr 1fr auto;
   align-items: center;
-  max-width: 1440px;
   margin: auto;
 }
 
