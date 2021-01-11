@@ -300,6 +300,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2em;
+    padding-bottom: 2em;
   }
 
   .acards {
@@ -350,7 +351,7 @@
   .footer {
     margin-top: 1em;
     display: grid;
-    padding: 1em;
+    padding: 1em 0 1em 0;
     background-color: #f2f2f2;
   }
 

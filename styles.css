@@ -21,20 +21,27 @@ a {
   text-decoration: none;
 }
 
+/* TOPBAR */
+
 .headerlogo {
   display: flex;
   margin-left: 2em;
 }
 .headerbar {
   display: grid;
-  grid-template-columns: 2fr 1fr auto;
+  grid-template-columns: 66% 22% 12%;
   align-items: center;
   margin: auto;
 }
 
 .navbar {
   display: flex;
-  margin-left: 6em;
+}
+.nav1 {
+  width: 50%;
+}
+.nav2 {
+ width: 50%;
 }
 
 .headerlink {
@@ -52,6 +59,7 @@ a {
 .signup {
   color: #0065fc;
   font-weight: bold;
+  margin-left: 36px;
   margin-right: 2em;
 }
 
@@ -59,6 +67,8 @@ a {
   color: #0065fc;
   border-top-color: #0065fc;
 }
+
+/* Titre et entête */
 
 #title {
   display: flex;

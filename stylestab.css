@@ -24,9 +24,7 @@
     align-items: center;
     margin: auto;
   }
-  .navbar {
-  margin-right: 2em;
-  }
+
 
   .headerlink {
     padding: 2em;
@@ -40,6 +38,7 @@
   .nav2 {
     width: 50%;
   }
+
   .headerlink:active,
   .signup:active {
     color: #0065fc;
